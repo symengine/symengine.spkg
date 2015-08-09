@@ -2,6 +2,7 @@
 
 cd src
 
+export LDFLAGS="-L$SAGE_LOCAL/lib"
 cmake -DCMAKE_INSTALL_PREFIX=$SAGE_LOCAL \
     -DBUILD_SHARED_LIBS=yes \
     -DCOMMON_DIR=$SAGE_LOCAL \
